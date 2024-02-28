@@ -1,5 +1,3 @@
-/* App.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +10,11 @@ body{
     background: linear-gradient(to bottom, #fffefa, #f0e7a2);
 }
 
-/* Header Styles */
+/* Header Section */
 .header {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center;
-  padding: 10px;
 }
 
 .logo {
@@ -27,7 +24,7 @@ body{
   object-fit: contain;
 }
 
-/* Main Styles */
+/* Main Section */
 .main {
   display: flex;
   flex-direction: column;
@@ -47,15 +44,26 @@ body{
 
 .left-section,
 .right-section {
-  padding: 20px;
+  padding: 15px;
   text-align: justify;
 }
 
-h2, h3 {
-  font-size: 17px;
-  padding-bottom: 15px;
+h2,h3{
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+h6,span{
+  font-size: 15px;
+  font-weight: 600;
+  /* padding: 0 10px; */
 }
 
+
+ul{
+  margin: auto;
+  width: 92%;
+  padding-bottom: 5px;
+}
 li,
 .right-section p {
   text-align: justify;
@@ -65,15 +73,15 @@ li,
 
 
 
-/* Other Styles */
+/* Other Section */
 .tools-section   {
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
   border-bottom: 2px solid #dd3030;
   text-align: justify;
 }
 .tools-section p:first-child{
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .tools-section p:last-child,
 .info-section{
@@ -86,7 +94,6 @@ li,
 .grid , .info-section p{
   display: flex;
   justify-content: center;
-  text-align: justify;
   padding: 10px 0;
 }
 .grid img{
@@ -94,7 +101,7 @@ li,
   margin: auto;
 }
 
-/* Footer Styles */
+/* Footer Section */
 .footer {
   background-color: rgb(196, 34, 34);
   color: #fff;
@@ -121,6 +128,8 @@ li,
 
 
 
+
+
 @media only screen and (min-width: 768px) {
   .main {
     flex-direction: row;
@@ -142,12 +151,12 @@ li,
   }
   .left-section,
   .right-section,.tools-section, .info-section{
-    width: 95%;
+    width: 94%;
     max-width: 100%;
     margin: auto;
   }
   .footer,.left-section, .info-section, .info-section p{
-    padding: 10px;
+    padding: 7px;
   } 
   .left-section img{
     width: 100%;
@@ -163,14 +172,19 @@ li,
     font-size: 14px;
   }
   .tools-section p, .info-section p{
-    font-size: 14px;
-    line-height: 1.1rem;
+    font-size: 12px;
+    width: 92%;
+    margin: auto;
+    text-align: justify;
+  }
+  h2,h3,h6,span{
+    font-size: 12px;
   }
   
   .grid img{
     width: 100%;
-    margin: 15px;
-    /* padding: 14px; */
+    margin: 10px;
+    height: 17vh;
   }
 
   .footer-main{
